@@ -1,0 +1,25 @@
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin main-title-desctop {
+	font-family: $title-font;
+	font-style: normal;
+	font-weight: $main-font-waight;
+	color: $title-text-color;
+	font-size: 60px;
+	line-height: 1.233;
+	text-align: left;
+}
+
+@mixin main-title-mobile {
+	font-family: $title-font;
+	font-style: normal;
+	font-weight: $main-font-waight;
+	color: $title-text-color;
+	font-size: 40px;
+	line-height: 1.14;
+	text-align: center;
+}
