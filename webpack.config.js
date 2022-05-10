@@ -1,135 +1,57 @@
-/**
- * Webpack main configuration file
- */
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const path = require('path');
-const fs = require('fs');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HTMLWebpackPlugin = require('html-webpack-plugin');
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const devServer = isDev =>
+  !isDev
+    ? {}
+    : {
+        devServer: {
+          open: true,
+          hot: true,
+          port: 8080,
+        },
+      };
 
-const environment = require('./configuration/environment');
-
-const templateFiles = fs.readdirSync(environment.paths.source)
-  .filter((file) => ['.html', '.ejs'].includes(path.extname(file).toLowerCase())).map((filename) => ({
-    input: filename,
-    output: filename.replace(/\.ejs$/, '.html'),
-  }));
-
-const htmlPluginEntries = templateFiles.map((template) => new HTMLWebpackPlugin({
-  inject: true,
-  hash: false,
-  filename: template.output,
-  template: path.resolve(environment.paths.source, template.input),
-  favicon: path.resolve(environment.paths.source, 'images', 'favicon.ico'),
-}));
-
-module.exports = {
-  entry: {
-    app: path.resolve(environment.paths.source, 'js', 'app.js'),
-  },
+module.exports = ({ develop }) => ({
+  mode: develop ? "development" : "production",
+  entry: "./src/index.js",
   output: {
-    filename: 'js/[name].js',
-    path: environment.paths.output,
+    path: path.resolve(__dirname, "build"),
+    filename: "bundle.js",
+    clean: true,
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "test.html",
+      template: "./src/test.html",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "./styles/main.css",
+    }),
+  ],
   module: {
     rules: [
       {
-        test: /\.((c|sa|sc)ss)$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
+        test: /\.(?:ico|png|jpg|jpeg|svg)$/i,
+        type: "asset/inline",
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ['babel-loader'],
+        test: /\.html$/i,
+        loader: "html-loader",
       },
       {
-        test: /\.(png|gif|jpe?g|svg)$/i,
-        type: 'asset',
-        parser: {
-          dataUrlCondition: {
-            maxSize: environment.limits.images,
-          },
-        },
-        generator: {
-          filename: 'images/design/[name].[hash:6][ext]',
-        },
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.(eot|ttf|woff|woff2)$/,
-        type: 'asset',
-        parser: {
-          dataUrlCondition: {
-            maxSize: environment.limits.images,
-          },
-        },
-        generator: {
-          filename: 'images/design/[name].[hash:6][ext]',
-        },
+        test: /\.scss$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
     ],
   },
-  optimization: {
-    minimizer: [
-      '...',
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.imageminMinify,
-          options: {
-            // Lossless optimization with custom option
-            // Feel free to experiment with options for better result for you
-            plugins: [
-              ['gifsicle', { interlaced: true }],
-              ['jpegtran', { progressive: true }],
-              ['optipng', { optimizationLevel: 5 }],
-              // Svgo configuration here https://github.com/svg/svgo#configuration
-              [
-                'svgo',
-                {
-                  plugins: [
-                    {
-                      name: 'removeViewBox',
-                      active: false,
-                    },
-                  ],
-                },
-              ],
-            ],
-          },
-        },
-      }),
-    ],
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
-    }),
-    new CleanWebpackPlugin({
-      verbose: true,
-      cleanOnceBeforeBuildPatterns: ['**/*', '!stats.json'],
-    }),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.resolve(environment.paths.source, 'images', 'content'),
-          to: path.resolve(environment.paths.output, 'images', 'content'),
-          toType: 'dir',
-          globOptions: {
-            ignore: ['*.DS_Store', 'Thumbs.db'],
-          },
-        },
-        {
-          from: path.resolve(environment.paths.source, 'videos'),
-          to: path.resolve(environment.paths.output, 'videos'),
-          toType: 'dir',
-          globOptions: {
-            ignore: ['*.DS_Store', 'Thumbs.db'],
-          },
-        },
-      ],
-    }),
-  ].concat(htmlPluginEntries),
-  target: 'web',
-};
+  ...devServer(develop),
+});

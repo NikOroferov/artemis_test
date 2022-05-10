@@ -1,0 +1,245 @@
+.testimonials{
+  padding: 60px 0;
+
+  @media screen and (min-width: $desctop) {
+    padding: 150px 0;
+  }
+}
+
+.testimonials-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (min-width: $desctop) {
+    &::after {
+      content: "";
+
+      background-color: $btn-color;
+    
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-radius: 50px;
+    
+      right: 38%;
+      top: 38%;
+    }
+  }
+}
+
+.testimonials-wrapper{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  @media screen and (min-width: $desctop) {
+    width: 50%;
+  }
+}
+
+.testimonials-title{
+  margin-bottom: 40px;
+
+  font-family: $title-font;
+  font-size: 32px;
+  font-weight: $main-font-waight;
+  line-height: 1.125;
+  color: $title-text-color;
+  text-align: center;
+
+  @media screen and (min-width: $desctop) {
+    line-height: 1.333;
+    text-align: left;
+    font-size: 48px;
+
+    padding-left: 20px;
+    margin-bottom: 75px;
+  }
+}
+
+.testimonials-swiper{
+  margin-bottom: 80px;
+  
+  &.swiper-container{
+    position: relative;
+  }
+
+  @media screen and (min-width: $desctop){
+    margin-bottom: 150px;
+  }
+}
+
+.swiper-slide.testimonials-swiper__slide{
+  opacity: 0.37;
+
+  &.swiper-slide-active{
+    opacity: 1;
+  }
+}
+
+.testimonials-swiper__slide-description{
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  max-width: 540px;
+
+  line-height: 1.813;
+
+  &::before{
+    content: url(../images/svg/testimonials-quote.svg);
+
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 30px;
+  }
+}
+
+.testimonials-swiper__slide-info{
+  display: flex;
+}
+
+.testimonials-swiper__slide-img{
+  margin-right: 20px;
+
+  width: 60px;
+
+  @media screen and (min-width: $desctop){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.testimonials-swiper_slide-sign{
+  @media screen and (min-width: $desctop){
+    padding-left: 20px;
+  }
+}
+
+.testimonials-swiper__slide-name{
+  margin-bottom: 5px;
+
+  font-weight: $accent-font-waight;
+  font-size: 14px;
+  line-height: 1.143;
+  color: $title-text-color;
+}
+
+.testimonials-swiper__slide-post{
+  max-width: 185px;
+  font-size: 14px;
+  line-height: 1.357;
+}
+
+.swiper-pagination.testimonials-swiper__pagination{
+  position: absolute;
+  bottom: -50px;
+
+  @media screen and (min-width: $desctop) {
+    left: 0;
+    width: 25%;
+    bottom: -80px;
+  }
+}
+
+.swiper-pagination-bullet{
+  width: 26px;
+  height: 3px;
+  border-radius: 1.5px;
+
+  &.swiper-pagination-bullet-active{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    background-image: url(../images/svg/testimonials-swiper-pagination-active.svg);
+  }
+}
+
+.testimonials-btn{
+  margin: 0 auto;
+
+  @media screen and (min-width: $desctop) {
+    margin: 0;
+    margin-left: 20px;
+  }
+}
+
+
+.testimonials-wrapper__img{
+  width: 50%;
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 35%;
+    left: 30%;
+
+    width: 44px;
+    height: 44px;
+    background-color: $accent-text-color;
+    border-radius: 50px;
+  }
+
+  &::after {
+    content: url(../images/svg/design-elem4.svg);
+
+    position: absolute;
+    bottom: 8%;
+    right: 5%;
+  }
+
+  @media screen and (max-width: 1439px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.testimonials-img{
+  position: absolute;
+  border-radius: 100px;
+
+  &:nth-child(1){
+    position: relative;
+    width: 198px;
+    left: 30%;
+
+    padding: 4px;
+    border: 3px $accent-color solid;
+  }
+
+  &:nth-child(2){
+    width: 158px;
+    top: 35%;
+    right: 0%;
+  }
+  
+  &:nth-child(3){
+    width: 205px;
+    bottom: 0%;
+    left: 35%;
+  }
+}

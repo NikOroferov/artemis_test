@@ -1,0 +1,151 @@
+.money{
+  padding-bottom: 35px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 25px 0;
+  }
+}
+
+.money-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 0 75px 0;
+
+  background-image: url(../images/svg/experience_back-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+
+  @media screen and (min-width: $tablet) {
+    height: 305px;
+    background-image: url(../images/svg/experience_background.svg);
+    
+    background-size: cover;
+    flex-direction: row;
+    
+    padding: 0;
+  }
+  @media screen and (min-width: $desctop) {
+    background-size: contain;;
+  }
+}
+
+.money-donated__list, .money-donated__title{
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+}
+
+.money-donated__item{
+  color: $accent-text-color;
+  font-weight: $accent-font-waight;
+
+  &:not(:last-child){
+    margin-bottom: 24px;
+  }
+}
+
+.money-donated__item-title{
+  font-family: $main-font;
+  font-weight: $accent-font-waight;
+  color: $accent-text-color;
+  line-height: 1.88;
+}
+
+.money-donated__item-sum{
+  font-size: 60px;
+}
+
+.money-donated__title{
+  margin-bottom: 32px;
+
+  font-family: $main-font;
+  color: $light-color;
+  font-size: 24px;
+  line-height: 1.167;
+  font-weight: $accent-font-waight;
+  text-align: center;
+}
+
+.money-list{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  
+  
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  @media screen and (max-width: 1439px) {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: $desctop) {
+    padding: 100px 0 100px 95px;
+
+    &::after {
+      content: url(../images/svg/experience_img.svg);
+    
+      position: absolute;
+      right: -1%;
+      top: -10%;
+    
+      width: 405px;
+    }
+
+    &::before{
+      content: url(../images/svg/design-elem1.svg);
+      position: absolute;
+      top: -13%;
+      left: -8%;
+      width: 60px;
+      height: 75px;
+    }
+
+  }
+}
+
+.money-item__title{
+  font-size: $main-font-size;
+  font-weight: $accent-font-waight;
+  line-height: 1.188;
+  color: $fourth-text-color;
+
+}
+
+.money-item:not(:last-child) > h3{
+  padding-right: 92px;
+}
+
+.money-item__data{
+  font-size: 60px;
+  font-weight: $accent-font-waight;
+  line-height: 1.167;
+  color: $accent-text-color;
+}
