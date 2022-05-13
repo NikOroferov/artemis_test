@@ -16,7 +16,7 @@
 }
 
 .blog-theory__box {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
   border-radius: 10px;
   background-color: #D8D8D8;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width:  1439.5px) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -73,13 +73,13 @@
 
   line-height: 1.813;
 
-  @media screen and(max-width: 767px){
+  @media screen and(max-width: 767.5px){
     margin-bottom: 40px;
   }
 }
 
 .blog-theory__description-desctop{
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     position: absolute;
     width: 1px;
     height: 1px;

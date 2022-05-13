@@ -48,7 +48,7 @@
   text-align: center;
   color: $title-text-color;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -176,7 +176,7 @@
   &:nth-child(4)::before{
     content: "";
 
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 767.5px){
       position: absolute;
       width: 100%;
       height: 110%;
