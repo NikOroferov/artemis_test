@@ -36,7 +36,7 @@
 
 .whats-new__swiper-next,
 .whats-new__swiper-prev {
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width:  1439.5px) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -79,7 +79,7 @@
 .swiper-button-prev,
 .swiper-button-next {
   fill: $accent-text-color;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     position: absolute;
     width: 1px;
     height: 1px;

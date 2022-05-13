@@ -11,23 +11,6 @@
 
   @media screen and (min-width: $desctop) {
     padding-bottom: 150px;
-    
-    &::before {
-      content: url(../images/svg/design-elem9.svg);
-
-      position: absolute;
-
-      top: 5%;
-      left: 5%;
-    }
-
-    &::after {
-      content: url(../images/svg/design-elem1.svg);
-
-      position: absolute;
-      bottom: 35.5%;
-      right: 15%;
-    }
   }
 }
 
@@ -81,13 +64,17 @@
 
   background-color: $second-background-colot;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     margin: 0 15px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 530px;
+    min-width: 450px;
     padding: 45px 40px auto 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 530px;
   }
 }
 
@@ -155,7 +142,7 @@
   position: relative;
   margin-bottom: 50px;
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767.5px){
     &::after{
       content: "";
       

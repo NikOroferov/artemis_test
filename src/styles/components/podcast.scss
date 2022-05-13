@@ -1,8 +1,28 @@
 .podcast{
+  position: relative;
   padding: 60px 0;
 
   @media screen and(min-width: $desctop){
     padding: 150px 0;
+
+    &::before {
+      content: url(../images/svg/design-elem9.svg);
+  
+      position: absolute;
+  
+      bottom: -30%;
+      left: 3%;
+    }
+  
+    &::after {
+      content: url(../images/svg/design-elem1.svg);
+  
+      position: absolute;
+      bottom: -90%;
+      right: 15%;
+
+      z-index: 1;
+    }
   }
 }
 
