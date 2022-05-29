@@ -1,0 +1,156 @@
+.call{
+  position: relative;
+  background-color: $second-background-colot;
+
+  @media screen and (min-width: 1024px) {
+    background-image: linear-gradient(
+      to bottom,
+      $second-accent-color 90%,
+      $third-background-color 10%
+    );
+    
+    &.call-funding{
+      background-image: linear-gradient(
+        to top,
+        $third-background-color 3%,
+        $second-accent-color 3%,
+        $second-accent-color 94%,
+        $third-background-color 3%
+        );
+      }
+
+    &.call-advisory{
+      background-image: linear-gradient(
+        to top,
+        $third-background-color 5%,
+        $second-accent-color 5%,
+        $second-accent-color 90%,
+        $third-background-color 5%
+      );
+    }
+
+    &.call-advisory::before{
+      content: '';
+
+      position: absolute;
+      top: 4%;
+      left: -71%;
+
+      
+      width: 100%;
+      height: 100%;
+      
+      background: url(../images/svg/access-background.svg);
+      background-repeat: no-repeat;
+      background-size: 26%;
+
+      transform: scale(-1, 1);
+      opacity: 0.5;
+    }
+  }
+}
+
+.call-contact{
+  background: linear-gradient(to bottom, $second-background-colot 100%, $second-background-colot 0%);
+}
+
+.call-background{
+  @media screen and (min-width: 1024px){
+    background-image: 
+    url(../images/svg/access-background.svg);
+    background-repeat: no-repeat;
+    background-size: 470px;
+    background-position: 7% -40px;
+  
+    
+    &.call-funding__background{
+      background-size: 32%;
+      background-position: 75% 11px;;
+    }
+  }
+}
+
+.call-container{
+  padding: 60px 0;
+
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    padding: 80px 0 170px 0;
+
+    &.call-contact__container{
+      padding: 100px 0;
+    }
+
+    &.funding{
+      padding-bottom: 110px;
+    }
+  }
+}
+
+.call-title{
+  margin-bottom: 24px;
+
+  font-size: 32px;
+  line-height: 1.333;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 48px;
+
+    &.call-contact__title{
+      margin-bottom: 54px;
+    }
+  }
+}
+
+.call-description{
+  max-width: 582px;
+  margin: 0 auto 40px auto;
+  
+  color: $title-text-color;
+  line-height: 1.818;
+  
+  &.call-description__funding{
+    max-width: 665px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 55px;
+  }
+}
+
+.call-btn__mobile{
+  margin-top: 16px;
+}
+
+.call-title__desctop, .call-btn__desctop{
+  @media screen and (max-width: 1023.5px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.call-description__mobile-text, .call-btn__mobile, .call-title__mobile{
+  @media screen and (min-width: 1024px){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}

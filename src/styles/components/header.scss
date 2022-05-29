@@ -140,7 +140,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width:  1439.5px) {
+  @media screen and (max-width: 1023.5px) {
     display: none;
   }
 }
@@ -168,7 +168,7 @@
   border-radius: 50px;
   cursor: pointer;
   
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: 1024px) {
     position: absolute;
     width: 1px;
     height: 1px;

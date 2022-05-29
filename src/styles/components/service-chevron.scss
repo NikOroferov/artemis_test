@@ -1,0 +1,38 @@
+.number-chevron{
+  height: 46px;
+  padding-right: 30px;
+
+  font-weight: $accent-font-waight;
+  font-size: 32px;
+  line-height: 1.375;
+  color: $title-text-color;
+
+
+  background-image: url(../images/svg/benefis-marker2.svg);
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+}
+
+.service-list__title{
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 24px;
+  font-family: $main-font;
+  line-height: 1.375;
+
+  @media screen and (min-width: 1024px) {
+    align-items: baseline;
+
+    font-size: 32px;
+  }
+}
+
+.benefis-item__title-text{
+  @media screen and (max-width: 1023px) {
+    max-width: 220px;
+  }
+}

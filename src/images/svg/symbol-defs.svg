@@ -156,5 +156,8 @@
 				d="M35.9676 31H35.4278H31.3423C30.1363 31 29.1553 31.8502 29.1553 32.8969V33.1046C29.1553 34.1523 30.134 35 31.3423 35H31.8851H35.4254H35.9665C37.1766 35 38.1524 34.1523 38.1553 33.1046V32.8969C38.1547 31.8502 37.1789 31 35.9676 31Z"
 				fill="#2D415E"></path>
 		</symbol>
+		<symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" id="right-chevron-title">
+			<path d="M1 18L8 9.5L1 1" stroke="black" stroke-width="2" stroke-linecap="round"></path>
+		</symbol>
 	</defs>
 </svg>

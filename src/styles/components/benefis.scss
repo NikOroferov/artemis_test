@@ -1,0 +1,146 @@
+.benefis{
+  padding: 155px 0 400px 0;
+
+  background-image: url(../images/svg/benefis-img.svg);
+  background-repeat: no-repeat;
+  background-size: 360px;
+  background-position: 50% 97%;
+
+  @media screen and (min-width: 1024px){
+    padding-bottom: 155px;
+
+    background-size: 30%;
+    background-position: 15% 65%;
+  }
+}
+
+.benefis-title{
+  margin-bottom: 80px;
+  
+  font-size: 32px;
+  line-height: 1.333;
+  text-align: center;
+  
+  @media screen and (min-width: $tablet){
+    font-size: 48px;
+
+    &.advisory{
+      max-width: 708px;
+
+      margin: 0 auto 80px auto;
+    }
+  }
+}
+
+.benefis-title__dectop{
+  @media screen and (max-width: 767.5px){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.benefis-title__mobile{
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+}
+
+.benefis-list{
+  @media screen and (min-width: 1024px){
+    width: 60%;
+    margin-left: auto;
+  }
+}
+
+.benefis-item__title-box {
+  display: flex;
+
+  padding: 20px 12px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 22px 15px;
+  }
+}
+
+.benefis-item{
+  position: relative;
+
+  &:nth-child(2) > .benefis-item__title-box{
+    background-color: $second-background-colot;
+    border-radius: 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &:first-child > .benefis-item__title-box{
+      padding: 0 0 0 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+.benefis-item__content-box{
+  padding-top: 20px;
+
+  @media screen and (min-width: 1024px){
+    padding-left: 75px;
+    padding-top: 24px;
+  }
+}
+
+.benefis-item__desceription, .benefis-item__content-item{
+  font-size: $main-font-size;
+  line-height: 1.813;
+}
+  
+.benefis-item__desceription, .benefis-item__content-title{
+  margin-bottom: 18px;
+}
+
+.benefis-item__content-title{
+  font-family: $main-font;
+  font-weight: $accent-font-waight;
+}
+
+.benefis-item__desceription-accent{
+  font-style: italic;
+}
+
+.benefis-item__content-list{
+padding-left: 12px;
+}
+
+.benefis-item__content-item{
+  padding-left: 9px;
+  
+  &::marker{
+    content: url(../images/svg/benefis-marker.svg);
+
+    width: 12px;
+    height: 12px;
+  }
+
+  &:not(:last-child){
+    margin-bottom: 18px;
+  }
+}
+
