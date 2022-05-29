@@ -2,6 +2,8 @@
 @import "./utils/mixins";
 @import "./base/scaffolding";
 @import "./base/container";
+@import "./components/service-chevron.scss";
+@import "./base/hidden.scss";
 @import "./components/buttons.scss";
 @import "./components/header.scss";
 @import "./components/main_hero.scss";
@@ -17,5 +19,11 @@
 @import "./components/about-us-hero.scss";
 @import "./components/timeline.scss";
 @import "./components/indonesia.scss";
+@import "./components/service-hero.scss";
+@import "./components/benefis.scss";
+@import "./components/call-to-action.scss";
+@import "./components/works.scss";
+@import "./components/usage.scss";
+@import "./components/newstler.scss";
 
 @import "./base/fonts";

@@ -29,6 +29,18 @@ module.exports = ({ develop }) => ({
       filename: "about-us.html",
       template: "./src/about-us.html",
     }),
+    new HtmlWebpackPlugin({
+      filename: "service-app.html",
+      template: "./src/service-app.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "service-funding.html",
+      template: "./src/service-funding.html",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "service-advisory.html",
+      template: "./src/service-advisory.html",
+    }),
     new MiniCssExtractPlugin({
       filename: "./styles/main.css",
     }),
