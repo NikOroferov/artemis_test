@@ -12,13 +12,6 @@
 
   @media screen and (min-width: $tablet){
     background-color: $primary-background-color;
-    
-    background: linear-gradient(90deg, #FDFDFD 14.9%, rgba(248, 248, 248, 0.0001) 86.54%, rgba(248, 248, 248, 0.0001) 92.52%, rgba(248, 248, 248, 0.285211) 100%),
-    linear-gradient(180deg, #F8F8F8 0%, rgba(254, 254, 254, 0.0001) 15.27%, rgba(253, 253, 253, 0.0001) 76.39%, #FDFDFD 92.35%),
-    url(../images/content/background.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position-x: right;
   }
   
   @media screen and (min-width: $desctop){
