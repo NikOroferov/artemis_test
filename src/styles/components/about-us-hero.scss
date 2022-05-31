@@ -1,12 +1,12 @@
 .aboutus{
   background-color: $primary-background-color;
   
-  background-image: linear-gradient(90deg,  rgba(248, 248, 248, 0.91) 0%, rgba(248, 248, 248, 0.91) 110%), url(../images/content/about-us-background-mobile.png);
+  background-image: linear-gradient(90deg,  rgba(248, 248, 248, 0.91) 0%, rgba(248, 248, 248, 0.91) 110%), url(../images/content/about-us-background-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   
   @media screen and (min-width: $tablet) {
-    background-image: linear-gradient(90deg,  rgba(248, 248, 248, 0.91) 0%, rgba(248, 248, 248, 0.91) 100%), url(../images/content/about-us-background-desctop.png);
+    background-image: linear-gradient(90deg,  rgba(248, 248, 248, 0.91) 0%, rgba(248, 248, 248, 0.91) 100%), url(../images/content/about-us-background-desctop.jpg);
     background-size: auto;
   }
   @media screen and (min-width: $desctop) {
