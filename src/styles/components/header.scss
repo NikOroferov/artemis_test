@@ -1,6 +1,11 @@
 .header{
-  position: relative;
+  position: fixed;
+  width: 100%;
+
   box-shadow: $primary-shadow;
+  background-color: #fff;
+
+  z-index: 9998;
 }
 
 .header-container{
@@ -127,10 +132,11 @@
   font-size: 14px;
   line-height: 1.362;
   font-weight: $main-font-waight;
+  color: $primary-text-color;
   background-color: transparent;
   cursor: pointer;
 
-  &:hover{
+  &:hover, &:focus{
     font-weight: $accent-font-waight;
   }
 }
@@ -140,12 +146,14 @@
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 1023.5px) {
     display: none;
   }
 }
 
 .header-options__item{
+  position: relative;
+
   &:first-child{
     margin-right: 32px;
   }
@@ -168,7 +176,7 @@
   border-radius: 50px;
   cursor: pointer;
   
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: 1024px) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -180,6 +188,93 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-    
+  }
+}
+
+.header-search{
+  position: absolute;
+
+  top: 75%;
+  right: 9.4%;
+
+  width: 525px;
+  padding: 20px 15px;
+
+  background-color: #fff;
+
+  box-shadow: $primary-shadow;
+  border-radius: 5px;
+
+  z-index: 2;
+}
+
+.header-search__form{
+  position: relative;
+
+  margin-bottom: 10px;
+}
+
+.header-search__input{
+  width: 100%;
+
+  padding-bottom: 10px;
+
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $secont-text-color;
+
+  font-size: 16px;
+  line-height: 1.375;
+  color: $secont-text-color;
+}
+
+.header-search__btn{
+  position: absolute;
+  top: 10%;
+  right: 0;
+
+  fill: #6C6C6C;;
+  cursor: pointer;
+
+  background-color: transparent;
+}
+
+.heder-search__tag-list{
+  margin-top: -5px;
+}
+
+.tag-link{
+  color: $primary-text-color;
+
+  &:hover{
+    color: $title-text-color;
+  }
+}
+
+.header-language__list{
+  position: absolute;
+
+  top: 35px;
+  left: -12px;
+
+  padding: 12px;
+
+  background-color: #fff;
+
+  border-radius: 5px;
+}
+
+.header-language__item{
+  color: #C0C2C3;
+  font-weight: $main-font-waight;
+  font-size: 14px;
+
+  &:hover, &:focus{
+    color: $title-text-color;
+    font-weight: $accent-font-waight;
+  }
+
+  &:not(:last-child){
+    margin-bottom: 6px;
   }
 }

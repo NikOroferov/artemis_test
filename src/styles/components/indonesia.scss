@@ -1,0 +1,79 @@
+.indonesia{
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desctop){
+    padding-bottom: 155px;
+  }
+}
+
+.indonesia > .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.indonesia-card{
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+
+.indonesia-card__title{
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 32px;
+
+  @media screen and (min-width: $desctop) {
+    padding-bottom: 23px;
+
+    font-family: $main-font;
+    line-height: 1.375;
+  }
+}
+
+.indonesia-card__description{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  max-width: 870px;
+
+  line-height: 1.813;
+}
+
+.indonesia-card__text-desctop{
+  @media screen and (max-width: 1439.5px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.indonesia-card__text-mobile{
+  @media screen and (min-width: $desctop) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.indonesia-img{
+  min-width: 0;
+  max-width: 545px;
+}

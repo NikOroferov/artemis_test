@@ -13,22 +13,34 @@
   flex-direction: column;
   padding: 60px 0 75px 0;
 
-  background-image: url(../images/svg/experience_back-mobile.svg);
-  background-size: contain;
+  background-color: $btn-stroke;
+  border-radius: 20px;
+  background-image: url(../images/content/deer-background.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: 115% 30px;
 
   @media screen and (min-width: $tablet) {
     height: 305px;
-    background-image: url(../images/svg/experience_background.svg);
     
-    background-size: cover;
     flex-direction: row;
-    
-    padding: 0;
-  }
-  @media screen and (min-width: $desctop) {
-    background-size: contain;;
+
+    background-image:
+      url(../images/content/square-back.png),
+      url(../images/svg/oval-back1.svg),
+      url(../images/svg/oval-back1.svg);
+
+    background-size:
+      230px,
+      425px,
+      305px;
+
+    background-position: 
+      bottom -80% left -10%,
+      top 50% right -5%,
+      top 0% right 5%;
+
+      padding: 0;
   }
 }
 
@@ -87,7 +99,7 @@
   justify-content: left;
   
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -101,7 +113,7 @@
     overflow: hidden;
   }
   
-  @media screen and (max-width: 1439px) {
+  @media screen and (max-width: 1439.5px) {
     justify-content: space-evenly;
     align-items: center;
   }
@@ -110,7 +122,7 @@
     padding: 100px 0 100px 95px;
 
     &::after {
-      content: url(../images/svg/experience_img.svg);
+      content: url(../images/content/money_img.png);
     
       position: absolute;
       right: -1%;

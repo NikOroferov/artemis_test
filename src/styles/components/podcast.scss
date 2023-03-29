@@ -1,8 +1,28 @@
 .podcast{
+  position: relative;
   padding: 60px 0;
 
   @media screen and(min-width: $desctop){
     padding: 150px 0;
+
+    &::before {
+      content: url(../images/svg/design-elem9.svg);
+  
+      position: absolute;
+  
+      bottom: -30%;
+      left: 3%;
+    }
+  
+    &::after {
+      content: url(../images/svg/design-elem1.svg);
+  
+      position: absolute;
+      bottom: -90%;
+      right: 15%;
+
+      z-index: 1;
+    }
   }
 }
 
@@ -14,37 +34,57 @@
   align-items: center;
   
   padding: 50px 25px;
-  background-image: url(../images/svg/podcast-back-mobile.svg);
+
+  background-color: $btn-stroke;
+  background-image: 
+    url(../images/svg/oval-back1.svg),
+    url(../images/svg/oval-back1.svg);
+
   background-repeat: no-repeat;
-  background-size: 101%;
+  background-size: 
+    425px,
+    305px;
+
+  background-position:
+    top 75% right 64%,
+    top 65% right 30%;
+
+  border-radius: 20px;
   
   @media screen and(min-width: $tablet){
     align-items: flex-end;
 
-    background-image: url(../images/svg/podcast-back-desctop.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-  
-    &::before{
-      content: "";
-  
-      position: absolute;
-  
-      width: 35px;
-      height: 35px;
-  
-      border: 3px $light-color solid;
-      border-radius: 50px;
-  
-      top: 4%;
-      right: 2.5%;
-    }
+    background-size:
+      425px,
+      310px;
 
+    background-position:
+      top 60% left 10%,
+      top -35% left 17%;
   }
 
   @media screen and(min-width: $desctop){
     padding: 72px 50px 72px 0;
-    
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 35px;
+    height: 35px;
+
+    top: 2%;
+    right: 3.5%;
+
+    border: 3px $light-color solid;
+    border-radius: 50px;
+
+    @media screen and(min-width: $desctop) {
+      top: 4%;
+      right: 2.5%;
+    }
   }
   
   &::after {
@@ -81,11 +121,12 @@
 
   width: 342px;
   top: 18%;
+  left: 4%;
 
   @media screen and(min-width: $tablet) {
     transform: scale(-1, 1);
     
-    top: -17%;
+    top: -10%;
     left: 10%;
   }
   @media screen and(min-width: $desctop) {

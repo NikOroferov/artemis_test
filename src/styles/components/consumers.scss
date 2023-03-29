@@ -48,7 +48,7 @@
   text-align: center;
   color: $title-text-color;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -80,88 +80,43 @@
 
 .consumers-item{
   position: relative;
-  padding: 40px 0 30px 0;
+  padding: 40px 15px 30px 15px;
 
-  @media screen and (min-width: $tablet) {
-    padding: 100px 0;
-    border-radius: 18px;
-    
-    & > .container {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    &:nth-child(2) > .container {
-      margin-left: auto;
-      margin-right: 0;
-      width: 50%;
-    }
-    
-    &:nth-child(odd) > .container {
-      margin-left: 0;
-      margin-right: auto;
-    }
-  }
-  
-  &:nth-child(odd){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:nth-child(odd) {
     background-color: $second-background-colot;
   }
 
-  &:nth-child(1){
-    background-image: url(../images/svg/help-img1.svg);
-    background-repeat: no-repeat;
-    background-size: 320px;
-    background-position-x: center;
-    background-position-y: 77%;
-
-      @media screen and (min-width: $tablet) {
-      background-size: auto;
-      background-position-x: 90%;
-      background-position-y: 50%;
-      }
-  }
-
-  &:nth-child(2){
-    background-image: url(../images/svg/help-img2.svg);
-    background-repeat: no-repeat;
-    background-size: 320px;
-    background-position-x: center;
-    background-position-y: 75%;
-    
-    @media screen and (min-width: $tablet) {
-      background-size: auto;
-      background-position-x: 15%;
-      background-position-y: 50%;
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+    justify-content: center;
+    column-gap: 30px;
+  
+    &:nth-child(odd) {
+      flex-direction: row;
+      column-gap: 30px;
     }
   }
 
-  &:nth-child(3){
-    background-image: url(../images/svg/help-img3.svg);
-    background-repeat: no-repeat;
-    background-size: 320px;
-    background-position-x: center;
-    background-position-y: 75%;
-    
-    @media screen and (min-width: $tablet) {
-      background-size: auto;
-      background-position-x: 90%;
-      background-position-y: 50%;
-    }
+  @media screen and (min-width: $tablet) {
+    padding: 100px 50px;
+    border-radius: 18px;
   }
   
   &:nth-child(4){
     padding: 60px 0;
+    background-color: #2D415E;
     
     @media screen and (min-width: $tablet) {
-      background-color: #2D415E;
       
       background-image: url(../images/content/deer-logo.png);
       ;
-      background-size: 25%;
+      background-size: 420px;
       background-repeat: no-repeat;
-      background-position-x: 83%;
+      background-position: 88% 50%;
     }
 
     &:nth-child(4) > .container{
@@ -169,27 +124,40 @@
       flex-direction: column;
       align-items: center;
 
+      padding: 0 25px;
+
       width: 100%;
     }
   }
-
+  
+  @media screen and (max-width: 767.5px){
   &:nth-child(4)::before{
     content: "";
 
-    @media screen and (max-width: 767px){
-      position: absolute;
-      width: 100%;
-      height: 110%;
-      top: -10%;
-      left: 0%;
-      z-index: -1;
-      
-      background: url(../images/svg/experience_back-mobile.svg);
-      transform: scale(-1, 1);
-      background-size: cover;
-    }
-    
+    position: absolute;
+    top: 0;
+    right: 0;
 
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../images/content/deer-background.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: top 25% left 105%;
+
+    transform: scale(-1, 1);
+    }
+  }
+}
+
+.consumer-item__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1024px){
+    align-items: start;
   }
 }
 
@@ -203,7 +171,7 @@
   text-align: center;
 
   @media screen and (min-width: $tablet) {
-    max-width: 455px;
+    max-width: 555px;
     font-family: $title-font;
     font-size: 48px;
     line-height: 1.333;
@@ -218,12 +186,36 @@
   text-align: left;
   line-height: 1.813;
   
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 56px;
     
-    max-width: 460px;
+    max-width: 500px;
     line-height: 1.813;
   }
+}
+
+.consumer-item__img-thumb{
+  width: 320px;
+  height: 230px;
+
+  @media (min-width: 1024px) {
+    width: 700px;
+    height: 450px;
+  }
+
+  @media (max-width: 1023.5px) {
+    position: absolute;
+
+    top: 48%;
+    left: calc(50% - 160px)
+  }
+}
+
+.consumer-item__img{
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
 }
 
 .consumers-item__description.download{
@@ -241,7 +233,6 @@
     line-height: 1.333;
   }
 }
-
 
 .consumer-item__btn-box{
   width: 215px;

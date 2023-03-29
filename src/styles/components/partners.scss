@@ -3,11 +3,17 @@
   flex-direction: column;
   align-items: center;
   padding: 60px 0px;
+
+  @media screen and (min-width: $desctop) {
+    &.service-partners{
+      padding: 110px 0 150px 0;
+    }
+  }
 }
 
 .partner-title{
   font-family: $main-font;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: $main-font-waight;
   line-height: 1.375;
   text-align: center;

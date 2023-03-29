@@ -1,0 +1,160 @@
+.aboutus{
+  background-color: $primary-background-color;
+  
+  background-image: linear-gradient(90deg,  rgba(248, 248, 248, 0.91) 0%, rgba(248, 248, 248, 0.91) 110%), url(../images/content/about-us-background-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(90deg,  rgba(248, 248, 248, 0.91) 0%, rgba(248, 248, 248, 0.91) 100%), url(../images/content/about-us-background-desctop.jpg);
+    background-size: auto;
+  }
+  @media screen and (min-width: $desctop) {
+    background-size: cover;
+  }
+}
+
+.aboutus-container{
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 60px 0 32px 0;
+  
+  @media screen and (min-width: $tablet) {
+    padding-top: 68px;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.aboutus-title{
+  max-width: 100%;
+  margin-bottom: 30px;
+
+  font-size: 32px;
+  line-height: 1.233;
+  
+  @media screen and (min-width: $desctop) {
+    max-width: 543px;
+    margin-bottom: 0;
+
+    font-size: 60px;
+    line-height: 1.313;
+  }
+
+}
+
+.aboutus-title__desctop, .aboutus-quote__sign-desctop{
+  @media screen and (max-width:  1439.5px){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.aboutus-title__mobile, .aboutus-quote__sign-mobile{
+  @media screen and (min-width: $desctop){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.aboutus-img{
+  margin-right: -15px;
+
+  max-width: 270px;
+  height: 100%;
+  overflow: hidden;
+
+  @media screen and (min-width: $desctop){
+    max-width: 581px;
+  }
+}
+
+.aboutus-quote{
+  position: absolute;
+
+  padding: 60px 20px;
+
+  bottom: -50%;
+  
+  border-radius: 10px;
+  background-color: $five-background-color;
+  background-image: url(../images/svg/about-us-quote.svg);
+  background-repeat: no-repeat;
+  background-position: 3% 16%;
+
+  @media screen and (min-width: $tablet){
+    padding: 40px 20px;
+    max-width: 50%;
+  }
+
+  @media screen and (min-width: $desctop){
+    padding: 60px 20px;
+    bottom: -25%;
+    left: calc(50% - 255px);
+    
+    padding: 75px 60px 55px 60px;
+    
+    box-shadow: $primary-shadow;
+    
+    background-position: 8.5% 33%;
+  }
+}
+
+.aboutus-quote__sign{
+  font-size: 24px;
+  line-height: 1.375;
+  color: $title-text-color;
+
+
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 8px;
+
+    font-family: $title-font;
+    font-size: 32px;
+    line-height: 1.531;
+  }
+}
+
+.aboutus-quote__name{
+  font-size: 16px;
+  line-height: 1.375;
+  color: $title-text-color;
+  text-align: right;
+
+  @media screen and (max-width:  1439.5px) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+  
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+}

@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artemis: Outcome measurement app</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-container">
+
+        <a href="./index.html">
+          <img src="./images/content/artemis-logo.png" alt="artemis-logo">
+        </a>
+
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+
+            <li class="header-nav__item">
+              <span class="header-nav__item-content">
+                Services
+                <svg width="8" height="6" class="header-nav__icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-path-nav"></use>
+                </svg>
+              </span>
+
+              <ul class="header-nav__services-list">
+                <li class="header-nav__services-item">
+                  <svg class="header-nav__services-icon" width="57" height="57">
+                    <use href="./images/svg/symbol-defs.svg#services1"></use>
+                  </svg>
+
+                  <a href="./service-funding.html" class="header-nav__services-link">
+                    Outcome-based funding
+                  </a>
+
+                  <p class="header-nav__services-description">
+                    Maximize your social value per dollar spent
+                  </p>
+                </li>
+
+                <li class="header-nav__services-item">
+                  <svg class="header-nav__services-icon" width="67" height="57">
+                    <use href="./images/svg/symbol-defs.svg#services2"></use>
+                  </svg>
+
+                  <a href="./service-advisory.html" class="header-nav__services-link">
+                    Advisory services
+                  </a>
+
+                  <p class="header-nav__services-description">
+                    Aling your CSR activities with your core business value
+                  </p>
+                </li>
+
+                <li class="header-nav__services-item">
+                  <svg class="header-nav__services-icon" width="61" height="57">
+                    <use href="./images/svg/symbol-defs.svg#services3"></use>
+                  </svg>
+
+                  <a href="./service-app.html" class="header-nav__services-link">
+                    Impact measurement app
+                  </a>
+
+                  <p class="header-nav__services-description">
+                    Become an impact-driven & data-driven organization
+                  </p>
+                </li>
+              </ul>
+            </li>
+
+            <li class="header-nav__item">
+              <a href="./about-us.html" class="header-nav__item-content">
+                About Us
+              </a>
+            </li>
+
+            <li class="header-nav__item">
+              <p class="header-nav__item-content">
+                Blog
+                <svg width="8" height="6" class="header-nav__icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-path-nav"></use>
+                </svg>
+              </p>
+
+              <ul class="header-nav__blog-list">
+                <li class="header-nav__blog-item">
+                  <a href="./blog-new.html" class="header-nav__blog-link">
+                    What's new?
+                  </a>
+                </li>
+                <li class="header-nav__blog-item">
+                  <a href="./blog-case.html" class="header-nav__blog-link">
+                    Case studies
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__item-content">
+                Contact Us
+              </a>
+            </li>
+
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__item-content">
+                Podcast
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-options">
+          <div class="header-options__item">
+            <button class="header-options__item-btn" data-language-btn>
+              English
+              <svg width="10" height="6" class="header-options__icon">
+                <use href="./images/svg/symbol-defs.svg#icon-path-nav"></use>
+              </svg>
+            </button>
+
+            <ul class="header-language__list is-hidden">
+              <li class="header-language__item">
+                English
+              </li>
+              <li class="header-language__item">
+                Bahasa
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-options__item">
+            <button class="header-options__item-btn" data-search-menu>
+              <svg width="15" height="15" class="header-nav__icon">
+                <use href="./images/svg/symbol-defs.svg#icon-options-loopa"></use>
+              </svg>
+
+            </button>
+          </div>
+        </div>
+
+        <button class="header-menu-btn">
+          <img src="./images/svg/menu.svg" alt="loupe">
+        </button>
+
+        <div class="header-search is-hidden">
+          <form class="header-search__form">
+            <input type="text" placeholder="Search" class="header-search__input">
+            <button class="header-search__btn">
+              <svg width="15" height="15" class="header-nav__icon">
+                <use href="./images/svg/symbol-defs.svg#icon-options-loopa"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="heder-search__tag-box">
+            <ul class="heder-search__tag-list">
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  COVID-19
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Theory of Change
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Volunteers
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Impact Measurement
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  NGOs
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Peduli Pangan
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Artemis Impact App
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Social Enterprise
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Uncategorized
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="service-hero app">
+      <div class="container">
+        <div class="service-hero__container">
+          <h1 class="service-hero__title">
+            Download the Artemis Impact app, and Effect Change
+          </h1>
+          <p class="service-hero__description">
+            One of the most accessible, convenient keys to starting your organization’s journey towards a data-driven impact-driven
+            future is through downloading our Artemis Impact app.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="benefis">
+      <div class="container">
+        <div class="benefis-container">
+
+          <h2 class="benefis-title">
+            <span class="benefis-title__dectop">
+              Why Artemis Impact Measurement app?
+            </span>
+
+            <span class="benefis-title__mobile">
+              With our web/mobile app your team will be able to achieve:
+            </span>
+          </h2>
+
+          <ul class="benefis-list">
+            <li class="benefis-item">
+              <div class="benefis-item__title-box">
+
+                <span class="benefis-item__number number-chevron ">01</span>
+
+                <h3 class="benefis-item__title service-list__title">
+                  Convenient Access
+                </h3>
+
+              </div>
+            </li>
+
+            <li class="benefis-item">
+              <div class="benefis-item__title-box">
+                <span class="benefis-item__number number-chevron">02</span>
+
+                <h3 class="benefis-item__title service-list__title">
+                  <span class="benefis-item__title-text">
+                    Comprehensive Data Collection
+                  </span>
+
+                  <svg class="service-list__title-icon" width="17" height="17" >
+                    <use href="./images/svg/symbol-defs.svg#right-chevron-title"></use>
+                  </svg>
+                </h3>
+
+              </div>
+
+              <div class="benefis-item__content-box">
+
+                <p class="benefis-item__desceription">
+                  Your team’s specific
+                  <span class="benefis-item__desceription-accent">
+                    Theory of Change
+                  </span>
+                  impact will be driven by hard numbers and the Artemis Impact app will allow your
+                  team to collect, collate, and effectively communicate your data transparently.
+                </p>
+
+                <h4 class="benefis-item__content-title">
+                  This data will clearly reflect
+                </h4>
+                <ul class="benefis-item__content-list">
+                  <li class="benefis-item__content-item">
+                    A record of actual work hours/time expended on any/every task
+                  </li>
+                  <li class="benefis-item__content-item">
+                    An output-based record collected through focused surveys
+                  </li>
+                  <li class="benefis-item__content-item">
+                    A comprehensive overview of both time expenditures and the resulting actual output
+                  </li>
+                </ul>
+              </div>
+
+            </li>
+
+            <li class="benefis-item">
+              <div class="benefis-item__title-box">
+                <span class="benefis-item__number number-chevron">03</span>
+                <h3 class="benefis-item__title service-list__title">
+                  Clearly Define Your ToC Terms
+                </h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="call">
+      <div class="call-background">
+        <div class="container">
+          <div class="call-container">
+            <h2 class="call-title">Easy Access for All</h2>
+
+            <p class="call-description">
+              <span class="call-description__mobile-text">
+                Easy Access for All
+              </span>
+
+              Whether your team is corporate, NGO, private enterprise or any size/shape in-between, once downloaded every team member
+              will be able to conveniently access and share all vital, real-time data.
+            </p>
+
+            <button class="accent-btn">
+              Download App
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works">
+
+      <h2 class="works-title">
+        <span class="works-title__desctop">
+          How It Works
+        </span>
+
+        <span class="works-title__mobile">
+          How does it work?
+        </span>
+      </h2>
+      <p class="works-preview">
+        The app features include:
+      </p>
+
+      <ul class="works-list">
+        <li class="works-item">
+          <div class="works-item__text-box">
+            <div class="works-item__title-box">
+              <span class="works-item__title-number number-chevron">01</span>
+              <h3 class="works-item__title service-list__title">
+                Access the app
+              </h3>
+            </div>
+            <p class="works-item__description">
+              <span class="works-item__description-desctop">
+                Access our web app or mobile app, and your features are at your fingertips.
+              </span>
+
+              <span class="works-item__description-mobile">
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed non venenatis ligula. Curabitur at urna ut arcu viverra cursus at non nibh
+              </span>
+            </p>
+          </div>
+
+          <img
+          src="./images/svg/works-img1.svg"
+          alt="artemis app"
+          class="works-item__img-desctop">
+
+          <div class="works-item__img-box">
+
+            <img src="./images/content/works-img-mobile.png"
+            alt="img1"
+            class="works-item__img-mobile">
+
+            <img
+            src="./images/content/works-mobile-img2.png"
+            alt="img2"
+            class="works-item__img-mobile">
+
+          </div>
+        </li>
+
+        <li class="works-item">
+          <div class="works-item__text-box">
+            <div class="works-item__title-box">
+              <span class="works-item__title-number number-chevron">02</span>
+              <h3 class="works-item__title service-list__title">
+                Create projects
+              </h3>
+            </div>
+
+            <p class="works-item__description">
+              <span class="works-item__description-desctop">
+                Create your project’s specifics and define your ToC terms. Enjoy complete flexibility!
+              </span>
+
+              <span class="works-item__description-mobile">
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed non venenatis ligula. Curabitur at urna ut arcu
+                viverra cursus at non nibh
+              </span>
+            </p>
+          </div>
+
+          <img
+          src="./images/svg/works-img2.svg" alt="start new project" class="works-item__img-desctop">
+
+          <div class="works-item__img-thumb">
+            <img
+            src="./images/content/works-img-mobile.png"
+            alt="img3"
+            class="works-item__img-mobile">
+          </div>
+
+        </li>
+
+        <li class="works-item">
+          <div class="works-item__text-box">
+            <div class="works-item__title-box">
+              <span class="works-item__title-number number-chevron">03</span>
+              <h3 class="works-item__title service-list__title">
+                Invite other actors
+              </h3>
+            </div>
+
+            <p class="works-item__description">
+              <span class="works-item__description-desctop">
+                Invite every team member working on your projects, at any level, to download and conveniently add all information and data needed to achieve transparency
+              </span>
+
+              <span class="works-item__description-mobile">
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed non venenatis ligula. Curabitur at urna ut arcu
+                viverra cursus at non nibh
+              </span>
+            </p>
+          </div>
+
+          <img
+          src="./images/svg/works-img3.svg"
+          alt="socials"
+          class="works-item__img-desctop">
+
+          <img
+          src="./images/content/works-img-mobile1.png"
+          alt="img3"
+          class="works-item__img-mobile">
+        </li>
+
+        <li class="works-item">
+          <div class="works-item__text-box">
+            <div class="works-item__title-box">
+              <span class="works-item__title-number number-chevron">04</span>
+              <h3 class="works-item__title service-list__title">
+                <span class="works-item__title-desctop">
+                  Dig In
+                </span>
+
+                <span class="works-item__title-mobile">
+                  Start implementing your projects and collecting the data
+                </span>
+              </h3>
+            </div>
+
+            <p class="works-item__description">
+              <span class="works-item__description-desctop">
+                Begin real work, implement your project goals, collect necessary data and create change!
+              </span>
+            </p>
+          </div>
+
+          <img
+          src="./images/svg/works-img4.svg"
+          alt="dig in"
+          class="works-item__img-desctop">
+        </li>
+      </ul>
+
+    </section>
+    <section class="call call-contact">
+      <div class="container">
+
+        <div class="call-container call-contact__container">
+          <h2 class="call-title call-contact__title">
+            <span class="call-title__desctop">
+              Contact Us Today to Learn More About the Artemis Impact app
+            </span>
+
+            <span class="call-title__mobile">
+              Download the Artemis Impact app here and begin your journey towards effective results today
+            </span>
+          </h2>
+
+          <button class="accent-btn call-btn__desctop">
+            Contact Us
+          </button>
+
+          <button class="accent-btn call-btn__mobile">
+            Download App
+          </button>
+        </div>
+
+      </div>
+    </section>
+    <section class="usage">
+      <div class="container">
+        <h2 class="usage-title">
+          How can You use this?
+        </h2>
+        <ul class="usage-list">
+          <li class="usage-item">
+            <div class="usage-item__title-box">
+              <span class="usage-item__number number-chevron ">01</span>
+              <h3 class="usage-item__title service-list__title">
+                Donors
+              </h3>
+            </div>
+
+            <p class="usage-item__description">
+              Donors: Any organization you are funding can simply access our app on web/mobile & start their journey of effecting
+              measurable impact. Or get in touch with us to know how we can help you take your impact a step further with our advisory
+              & outcome-based funding services.
+            </p>
+          </li>
+
+          <li class="usage-item">
+            <div class="usage-item__title-box">
+              <span class="usage-item__number number-chevron">02</span>
+              <h3 class="usage-item__title service-list__title">
+                NGOs
+              </h3>
+            </div>
+
+            <p class="usage-item__description">
+              Any size or activity, Artemis Impact app is available for you to start your journey on effective impact measurement, and
+              join the league of data-driven organizations.
+            </p>
+          </li>
+        </ul>
+
+        <button class="regular-btn usage-btn">
+          Get in touch
+        </button>
+      </div>
+    </section>
+    <section class="newstler">
+      <div class="container">
+        <div class="newstler-container">
+          <img src="./images/content/newsletter.png" alt="man" class="newstler-img">
+          <div class="newstler-content">
+            <h2 class="newstler-title">
+              Join Our Newsletter
+            </h2>
+            <form class="newstler-form">
+
+              <input type="email" name="newstler-email"
+              placeholder="Email address"
+              class="newstler-input">
+
+              <button class="regular-btn newstler-btn">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners ">
+      <div class="container">
+        <div class="partners-container service-partners">
+          <h2 class="partner-title">They put their trust in us</h2>
+          <ul class="partner-list">
+            <li class="partner-item">
+              <img class="partner-logo" src="./images/content/partner1.jpg" />
+            </li>
+            <li class="partner-item">
+              <img class="partner-logo" src="./images/content/partner2.jpg" />
+            </li>
+            <li class="partner-item">
+              <img class="partner-logo" src="./images/content/partner3.jpg" />
+            </li>
+            <li class="partner-item">
+              <img class="partner-logo" src="./images/content/partner4.jpg" />
+            </li>
+            <li class="partner-item">
+              <img class="partner-logo" src="./images/content/partner5.jpg" />
+            </li>
+            <li class="partner-item">
+              <img class="partner-logo" src="./images/content/partner6.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contacts service-contacts">
+      <h2 class="contacts-title contacts-title__services">
+        Start your Social Impact
+        Journey Today
+      </h2>
+
+      <div class="contacts-container">
+
+        <form class="contacts-form">
+          <h3 class="contacts-form__title">
+            Get in touch
+          </h3>
+
+          <input type="text" class="contacts-form__input" placeholder="Name">
+          <input type="email" class="contacts-form__input" placeholder="Email">
+          <input type="text" class="contacts-form__input" placeholder="Message">
+
+          <button class="accent-btn" type="submit">
+            Submit
+          </button>
+        </form>
+
+        <div class="contacts-data">
+          <div class="contacts-data__inquiries">
+            <h4 class="contacts-data__title">
+              General Inquiries
+            </h4>
+
+            <ul class="contacts-data__list">
+              <li class="contacts-data__item">
+                <svg class="contacts-data__logo" width="12" height="12">
+                  <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                </svg>
+
+                <a href="tel:+62-858-9444-2405" class="contacts-data__link">
+                  +62-858-9444-2405
+                </a>
+              </li>
+
+              <li class="contacts-data__item">
+                <svg class="contacts-data__logo" width="14" height="10">
+                  <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+                </svg>
+
+                <ul class="contacts-data__inquiries-mails">
+                  <li class="contacts-data__inquiries-mail">
+                    <a href="mailto:contact@artemis.im" class="contacts-data__link">
+                      contact@artemis.im
+                    </a>
+                  </li>
+
+                  <li class="contacts-data__inquiries-mail">
+                    <a href="mailto:simon@artemis.im" class="contacts-data__link">
+                      simon@artemis.im
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contacts-data__media">
+            <h4 class="contacts-data__title">
+              Media & Press
+            </h4>
+
+            <ul class="contacts-data__list">
+              <li class="contacts-data__item">
+                <svg class="contacts-data__logo" width="12" height="12">
+                  <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <a href="tel:+62 812-8337-4974" class="contacts-data__link">
+                  +62 812-8337-4974
+                </a>
+              </li>
+
+              <li class="contacts-data__item">
+                <svg class="contacts-data__logo" width="14" height="10">
+                  <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+                </svg>
+
+                <a href="mailto:contact@artemis.im" class="contacts-data__link">
+                  contact@artemis.im
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <a href="./index.html" class="footer-logo">
+          <img src="./images/content/artemis-logo.png" alt="logo">
+        </a>
+
+        <div class="footer-company">
+          <h3 class="footer-title">
+            Company
+          </h3>
+
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                About Us
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                Contact Us
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                Blog
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                Vlog
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                Podcast
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                Case Studies
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h3 class="footer-title">
+            Services
+          </h3>
+
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                Outcome-based funding
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                Advisory
+              </a>
+            </li>
+            <li class="footer-item">
+              <a href="#" class="footer-link">
+                Outcome measurement application
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-contacts">
+          <h3 class="footer-title">
+            Contacts
+          </h3>
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__item">
+              <a href="tel:+62-858-9444-2405" class="footer-link">
+                <svg class="footer-contacts__logo" width="11" height="11">
+                  <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                +62-858-9444-2405
+              </a>
+            </li>
+            <li class="footer-contacts__item">
+              <a href="mailto:contact@artemis.im" class="footer-link">
+                <svg class="footer-contacts__logo" width="12" height="12">
+                  <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+                </svg>
+                contact@artemis.im
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-follow">
+          <h3 class="footer-title">
+            Follow Us
+          </h3>
+
+          <ul class="footer-follow__list">
+            <li class="footer-follow__item">
+              <a href="#">
+                <svg class="footer-follow__icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-follow__item">
+              <a href="#">
+                <svg class="footer-follow__icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-follow__item">
+              <a href="#">
+                <svg class="footer-follow__icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-follow__item">
+              <a href="#">
+                <svg class="footer-follow__icon" width="20" height="20">
+                  <use href="./images/svg/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        All rights reserved (c) Artemis 2020
+      </p>
+    </div>
+  </footer>
+
+  <div class="modal-menu">
+    <button class="modal-menu__close">
+      Close
+    </button>
+
+    <nav class="modal-menu__nav">
+      <ul class="modal-menu__nav-list">
+        <li class="modal-menu__nav-item">
+          <a href="./index.html" class="modal-menu__nav-link">Home</a>
+        </li>
+        <li class="modal-menu__nav-item">
+          <a href="./service-app.html" class="modal-menu__nav-link">Service</a>
+        </li>
+        <li class="modal-menu__nav-item">
+          <a href="./about-us.html" class="modal-menu__nav-link">About Us</a>
+        </li>
+        <li class="modal-menu__nav-item">
+          <a href="./blog-new.html" class="modal-menu__nav-link">Blog</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="modal-menu__contacts">
+      <li class="modal-menu__contacts-item">
+        <a href="tel:+62-858-9444-2405" class="modal-menu__contacts-link">
+          <svg class="footer-contacts__logo" width="20" height="20">
+            <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+          </svg>
+          <span>
+            +62-858-9444-2405
+          </span>
+        </a>
+      </li>
+      <li class="modal-menu__contacts-item">
+        <a href="mailto:contact@artemis.im" class="modal-menu__contacts-link">
+          <svg class="footer-contacts__logo" width="20" height="20">
+            <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+          </svg>
+          <span>
+            contact@artemis.im
+          </span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="modal-menu__socials">
+      <li class="modal-menu__socials-item">
+        <a href="#" class="modal-menu__social-link">
+          <svg class="footer-follow__icon">
+            <use href="./images/svg/symbol-defs.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal-menu__socials-item">
+        <a href="#" class="modal-menu__social-link">
+          <svg class="footer-follow__icon">
+            <use href="./images/svg/symbol-defs.svg#linkedin"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal-menu__socials-item">
+        <a href="#" class="modal-menu__social-link">
+          <svg class="footer-follow__icon">
+            <use href="./images/svg/symbol-defs.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal-menu__socials-item">
+        <a href="#" class="modal-menu__social-link">
+          <svg class="footer-follow__icon">
+            <use href="./images/svg/symbol-defs.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="./index.js" type="module"></script>
+</body>
+</html>

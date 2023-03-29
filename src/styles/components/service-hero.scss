@@ -1,0 +1,73 @@
+.service-hero{
+  padding: 60px 0 50px 0;
+  background-color: $second-background-colot;
+
+  @media screen and (min-width: 1024px){
+    &.app{
+      padding: 176px 0;
+
+      background-image: url(../images/content/service-hero1.png);
+    }
+
+    &.funding{
+      padding: 120px 0;
+
+      background-image: url(../images/content/service-hero2.png);
+    }
+
+    &.advisory{
+      padding: 95px 0 125px 0;
+
+      background-image: url(../images/content/service-hero2.png);
+    }
+
+    background-size: 45%;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+  }
+  
+  @media screen and (min-width: $desctop){
+    background-position: 85% 50%;
+    background-size: unset;
+  }
+}
+
+.service-hero__container{
+  max-width: 330px;
+  margin: 0 auto;
+
+  text-align: center;
+
+  @media screen and (min-width: $tablet){
+    max-width: 506px;
+  }
+
+  @media screen and (min-width: 1024px){
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: left;
+  }
+}
+
+.service-hero__title{
+  margin-bottom: 24px;
+
+  font-size: 32px;
+  line-height: 1.333;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+  }
+}
+
+.service-hero__description{
+  line-height: 1.818;
+
+  &.advisory{
+    max-width: 486px;
+  }
+}

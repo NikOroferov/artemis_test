@@ -11,23 +11,7 @@
 
   @media screen and (min-width: $desctop) {
     padding-bottom: 150px;
-    
-    &::before {
-      content: url(../images/svg/design-elem9.svg);
 
-      position: absolute;
-
-      top: 5%;
-      left: 5%;
-    }
-
-    &::after {
-      content: url(../images/svg/design-elem1.svg);
-
-      position: absolute;
-      bottom: 35.5%;
-      right: 15%;
-    }
   }
 }
 
@@ -54,6 +38,22 @@
   }
 }
 
+.contacts-title__services{
+  @media screen and (min-width: 1024px){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
 .contacts-container{
   overflow: hidden;
   @media screen and (min-width: $tablet) {
@@ -76,17 +76,15 @@
   flex-direction: column;
   align-items: center;
 
+  margin: 0 15px;
   padding: 60px 25px;
   border-radius: 10px;
 
   background-color: $second-background-colot;
 
-  @media screen and (max-width: 767px) {
-    margin: 0 15px;
-  }
 
   @media screen and (min-width: $tablet) {
-    width: 530px;
+    min-width: 450px;
     padding: 45px 40px auto 20px;
   }
 }
@@ -155,7 +153,7 @@
   position: relative;
   margin-bottom: 50px;
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767.5px){
     &::after{
       content: "";
       
