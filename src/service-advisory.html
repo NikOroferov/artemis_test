@@ -87,12 +87,12 @@
 
               <ul class="header-nav__blog-list">
                 <li class="header-nav__blog-item">
-                  <a href="#" class="header-nav__blog-link">
+                  <a href="./blog-new.html" class="header-nav__blog-link">
                     What's new?
                   </a>
                 </li>
                 <li class="header-nav__blog-item">
-                  <a href="#" class="header-nav__blog-link">
+                  <a href="./blog-case.html" class="header-nav__blog-link">
                     Case studies
                   </a>
                 </li>
@@ -113,30 +113,100 @@
           </ul>
         </nav>
 
-        <ul class="header-options">
-          <li class="header-options__item">
-            <button class="header-options__item-btn">
+        <div class="header-options">
+          <div class="header-options__item">
+            <button class="header-options__item-btn" data-language-btn>
               English
               <svg width="10" height="6" class="header-options__icon">
                 <use href="./images/svg/symbol-defs.svg#icon-path-nav"></use>
               </svg>
             </button>
-          </li>
 
-          <li class="header-options__item">
-            <button class="header-options__item-btn">
+            <ul class="header-language__list is-hidden">
+              <li class="header-language__item">
+                English
+              </li>
+              <li class="header-language__item">
+                Bahasa
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-options__item">
+            <button class="header-options__item-btn" data-search-menu>
               <svg width="15" height="15" class="header-nav__icon">
                 <use href="./images/svg/symbol-defs.svg#icon-options-loopa"></use>
               </svg>
 
             </button>
-          </li>
-        </ul>
+          </div>
+        </div>
 
         <button class="header-menu-btn">
-          <img src="./images/svg/menu.svg" alt="menu">
+          <img src="./images/svg/menu.svg" alt="loupe">
         </button>
 
+        <div class="header-search is-hidden">
+          <form class="header-search__form">
+            <input type="text" placeholder="Search" class="header-search__input">
+            <button class="header-search__btn">
+              <svg width="15" height="15" class="header-nav__icon">
+                <use href="./images/svg/symbol-defs.svg#icon-options-loopa"></use>
+              </svg>
+            </button>
+          </form>
+
+          <div class="heder-search__tag-box">
+            <ul class="heder-search__tag-list">
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  COVID-19
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Theory of Change
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Volunteers
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Impact Measurement
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  NGOs
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Peduli Pangan
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Artemis Impact App
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Social Enterprise
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Uncategorized
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
       </div>
     </div>
   </header>

@@ -7,6 +7,14 @@ body {
   color: $primary-text-color;
 }
 
+main{
+  padding-top: 60px;
+
+  @media (min-width: $desctop){
+    padding-top: 80px;
+  }
+}
+
 *, ::before, ::after{
   box-sizing: border-box;
 }

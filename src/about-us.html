@@ -7,7 +7,7 @@
   <title>Artemis</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header-container">
   
@@ -19,12 +19,12 @@
           <ul class="header-nav__list">
   
             <li class="header-nav__item">
-              <p class="header-nav__item-content">
+              <span class="header-nav__item-content">
                 Services
                 <svg width="8" height="6" class="header-nav__icon">
                   <use href="./images/svg/symbol-defs.svg#icon-path-nav"></use>
                 </svg>
-              </p>
+              </span>
   
               <ul class="header-nav__services-list">
                 <li class="header-nav__services-item">
@@ -72,7 +72,7 @@
             </li>
   
             <li class="header-nav__item">
-              <a href="#" class="header-nav__item-content">
+              <a href="./about-us.html" class="header-nav__item-content">
                 About Us
               </a>
             </li>
@@ -87,12 +87,12 @@
   
               <ul class="header-nav__blog-list">
                 <li class="header-nav__blog-item">
-                  <a href="#" class="header-nav__blog-link">
+                  <a href="./blog-new.html" class="header-nav__blog-link">
                     What's new?
                   </a>
                 </li>
                 <li class="header-nav__blog-item">
-                  <a href="#" class="header-nav__blog-link">
+                  <a href="./blog-case.html" class="header-nav__blog-link">
                     Case studies
                   </a>
                 </li>
@@ -113,30 +113,100 @@
           </ul>
         </nav>
   
-        <ul class="header-options">
-          <li class="header-options__item">
-            <button class="header-options__item-btn">
+        <div class="header-options">
+          <div class="header-options__item">
+            <button class="header-options__item-btn" data-language-btn>
               English
               <svg width="10" height="6" class="header-options__icon">
                 <use href="./images/svg/symbol-defs.svg#icon-path-nav"></use>
               </svg>
             </button>
-          </li>
   
-          <li class="header-options__item">
-            <button class="header-options__item-btn">
+            <ul class="header-language__list is-hidden">
+              <li class="header-language__item">
+                English
+              </li>
+              <li class="header-language__item">
+                Bahasa
+              </li>
+            </ul>
+          </div>
+  
+          <div class="header-options__item">
+            <button class="header-options__item-btn" data-search-menu>
               <svg width="15" height="15" class="header-nav__icon">
                 <use href="./images/svg/symbol-defs.svg#icon-options-loopa"></use>
               </svg>
   
             </button>
-          </li>
-        </ul>
+          </div>
+        </div>
   
         <button class="header-menu-btn">
-          <img src="./images/svg/menu.svg" alt="menu">
+          <img src="./images/svg/menu.svg" alt="loupe">
         </button>
   
+        <div class="header-search is-hidden">
+          <form class="header-search__form">
+            <input type="text" placeholder="Search" class="header-search__input">
+            <button class="header-search__btn">
+              <svg width="15" height="15" class="header-nav__icon">
+                <use href="./images/svg/symbol-defs.svg#icon-options-loopa"></use>
+              </svg>
+            </button>
+          </form>
+  
+          <div class="heder-search__tag-box">
+            <ul class="heder-search__tag-list">
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  COVID-19
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Theory of Change
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Volunteers
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Impact Measurement
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  NGOs
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Peduli Pangan
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Artemis Impact App
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Social Enterprise
+                </a>
+              </li>
+              <li class="blog-slide__tag">
+                <a href="./blog-case.html" class="tag-link">
+                  Uncategorized
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+        </div>
       </div>
     </div>
   </header>
@@ -630,5 +700,85 @@
       </p>
     </div>
   </footer>
+
+  <div class="modal-menu">
+    <button class="modal-menu__close">
+      Close
+    </button>
+  
+    <nav class="modal-menu__nav">
+      <ul class="modal-menu__nav-list">
+        <li class="modal-menu__nav-item">
+          <a href="./index.html" class="modal-menu__nav-link">Home</a>
+        </li>
+        <li class="modal-menu__nav-item">
+          <a href="./service-app.html" class="modal-menu__nav-link">Service</a>
+        </li>
+        <li class="modal-menu__nav-item">
+          <a href="./about-us.html" class="modal-menu__nav-link">About Us</a>
+        </li>
+        <li class="modal-menu__nav-item">
+          <a href="./blog-new.html" class="modal-menu__nav-link">Blog</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <ul class="modal-menu__contacts">
+      <li class="modal-menu__contacts-item">
+        <a href="tel:+62-858-9444-2405" class="modal-menu__contacts-link">
+          <svg class="footer-contacts__logo" width="20" height="20">
+            <use href="./images/svg/symbol-defs.svg#icon-phone"></use>
+          </svg>
+          <span>
+            +62-858-9444-2405
+          </span>
+        </a>
+      </li>
+      <li class="modal-menu__contacts-item">
+        <a href="mailto:contact@artemis.im" class="modal-menu__contacts-link">
+          <svg class="footer-contacts__logo" width="20" height="20">
+            <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+          </svg>
+          <span>
+            contact@artemis.im
+          </span>
+        </a>
+      </li>
+    </ul>
+  
+    <ul class="modal-menu__socials">
+      <li class="modal-menu__socials-item">
+        <a href="#" class="modal-menu__social-link">
+          <svg class="footer-follow__icon">
+            <use href="./images/svg/symbol-defs.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal-menu__socials-item">
+        <a href="#" class="modal-menu__social-link">
+          <svg class="footer-follow__icon">
+            <use href="./images/svg/symbol-defs.svg#linkedin"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal-menu__socials-item">
+        <a href="#" class="modal-menu__social-link">
+          <svg class="footer-follow__icon">
+            <use href="./images/svg/symbol-defs.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="modal-menu__socials-item">
+        <a href="#" class="modal-menu__social-link">
+          <svg class="footer-follow__icon">
+            <use href="./images/svg/symbol-defs.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <script src="./index.js" type="module"></script>
+
 </body>
 </html>

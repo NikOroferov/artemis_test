@@ -1,6 +1,17 @@
 const screenWidth = window.screen.width;
 
-if (screenWidth <= 1023) {
+new Swiper(".case-swiper", {
+  slidesPerView: 1,
+  pagination: {
+    el: ".blog-pagination",
+    clickable: true,
+    renderBullet: function (idx, className) {
+      return '<span class=" ' + className + ' ">' + (idx + 1) + "</span>";
+    },
+  },
+});
+
+if (screenWidth < 1024) {
   new Swiper(".testimonials-swiper", {
     pagination: {
       el: ".swiper-pagination",
@@ -17,7 +28,7 @@ if (screenWidth <= 1023) {
     spaceBetween: 15,
   });
 
-  new Swiper(".blog-content__swiper", {
+  new Swiper(".blog-swiper", {
     slideToClickedSlide: true,
     slidesPerView: 1.25,
     spaceBetween: 15,
@@ -41,13 +52,13 @@ if (screenWidth <= 1023) {
     freeMode: true,
   });
 
-  new Swiper(".blog-content__swiper", {
+  new Swiper(".blog-swiper", {
     slideToClickedSlide: true,
     slidesPerView: 2.5,
     spaceBetween: 30,
     navigation: {
-      nextEl: ".blog-content__swiper-next",
-      prevEl: ".blog-content__swiper-prev",
+      nextEl: ".blog-swiper-next",
+      prevEl: ".blog-swiper-prev",
     },
   });
 }

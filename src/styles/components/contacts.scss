@@ -76,22 +76,16 @@
   flex-direction: column;
   align-items: center;
 
+  margin: 0 15px;
   padding: 60px 25px;
   border-radius: 10px;
 
   background-color: $second-background-colot;
 
-  @media screen and (max-width: 767.5px) {
-    margin: 0 15px;
-  }
 
   @media screen and (min-width: $tablet) {
     min-width: 450px;
     padding: 45px 40px auto 20px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 100%;
   }
 }
 
